@@ -1,0 +1,7 @@
+Flask==0.9
+Jinja2==2.6
+Werkzeug==0.8.3
+argparse==1.2.1
+-e git+http://github.com/sjl/flask-lesscss.git@87744a2ed5a0e9e312f627e9ab1b59066062e61e#egg=flask_lesscss-dev
+requests==0.14.0
+wsgiref==0.1.2
