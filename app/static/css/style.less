@@ -14,4 +14,27 @@ header.main {.clearfix;max-width:1080px;margin:0 auto;}
 
 // general content
 .main-content {margin-bottom:40px;max-width:1080px;margin:0 auto;}
+@media screen and (max-width:1120px) {
+  header.main {margin:0 20px;}
+  .main-content {margin:0 20px;}
+}
+
+// portfolio
+.portfolio-shell {overflow:hidden;position:relative;}
+.portfolio {list-style:none;margin:0;.clearfix;position:relative;width:20000px;}
+.portfolio li {float:left;width:1080px;}
+.portfolio h2 {margin-top:0;}
+.portfolio p {}
+.portfolio > li > img {.pull-left;width:53%;}
+.portfolio > li > div {.pull-right;width:45%;}
+
+// about me
+section.about {width:80%;margin-bottom:100px;}
+
+@media screen and (max-width:800px) {
+  .portfolio > li > img {float:none;width:100%;}
+  .portfolio > li > div {float:none;width:100%;}
+  section.about {width:100%;}
+}
+
 
