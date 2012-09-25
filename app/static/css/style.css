@@ -774,33 +774,22 @@ a.active {
 body {
   overflow-x: hidden;
 }
-.navlayout {
-  padding: 0;
-  list-style: none;
+header.main {
   *zoom: 1;
+  max-width: 1080px;
+  margin: 0 auto;
 }
-.navlayout:before,
-.navlayout:after {
+header.main:before,
+header.main:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.navlayout:after {
+header.main:after {
   clear: both;
-}
-.navlayout > li {
-  display: inline;
-}
-.navlayout .left {
-  float: left;
-}
-.navlayout .right {
-  float: right;
-}
-.navlayout .center {
-  margin: auto;
-  text-align: center;
 }
 .main-content {
   margin-bottom: 40px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
