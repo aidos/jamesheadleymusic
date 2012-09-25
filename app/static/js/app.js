@@ -3,15 +3,17 @@
 require.config({
 	paths: {
 		jquery: 'libs/jquery-1.7.2.min',
-		lazyload: 'libs/jquery.lazyload'
+		lazyload: 'libs/jquery.lazyload',
+		prettyphoto: 'libs/jquery.prettyphoto'
 	},
   shim: {
-    'lazyload': ['jquery']
+    'lazyload': ['jquery'],
+    'prettyphoto': ['jquery']
   }
 });
 
 // Load our app
-define(['jquery', 'lazyload', 'libs/ios-zoom-fix'], function() {
+define(['jquery', 'lazyload', 'prettyphoto', 'libs/ios-zoom-fix'], function() {
 
   // portfolio
   $('.portfolio').each(function(){
@@ -56,5 +58,12 @@ define(['jquery', 'lazyload', 'libs/ios-zoom-fix'], function() {
 
   });
 
+
+  // pretty photo
+  $("a[rel^='prettyPhoto']").prettyPhoto({
+    social_tools : '',
+    default_width : '100%',
+    default_height : '100%'
+  });
 });
 

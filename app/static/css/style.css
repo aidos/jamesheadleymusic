@@ -1,3 +1,4 @@
+@import "libs/prettyphoto/css/prettyphoto.css";
 /*!
  * Bootstrap v2.1.1
  *
@@ -761,6 +762,12 @@ pre code {
 .affix {
   position: fixed;
 }
+h1 {
+  font-weight: 200;
+}
+h2 {
+  font-weight: 200;
+}
 a {
   color: #ccc;
 }
@@ -788,20 +795,60 @@ header.main:after {
 header.main:after {
   clear: both;
 }
+footer.main {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  line-height: 35px;
+  height: 35px;
+}
+footer.main .inner {
+  margin: 0 auto;
+  max-width: 1080px;
+}
 .main-content {
   margin-bottom: 40px;
   max-width: 1080px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1100px) {
   header.main {
-    margin: 0 20px;
+    margin: 0 10px;
   }
   .main-content {
-    margin: 0 20px;
+    margin: 0 10px;
+  }
+  footer.main .inner {
+    margin: 0 10px;
+  }
+  footer.main .mobile-label {
+    display: none;
   }
 }
+header.portfolio-head {
+  *zoom: 1;
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 30px;
+}
+header.portfolio-head:before,
+header.portfolio-head:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+header.portfolio-head:after {
+  clear: both;
+}
+header.portfolio-head span {
+  float: left;
+}
+header.portfolio-head .controls {
+  float: right;
+}
 .portfolio-shell {
+  margin: 10px 0 40px 0;
   overflow: hidden;
   position: relative;
 }
@@ -828,6 +875,10 @@ header.main:after {
 .portfolio h2 {
   margin-top: 0;
 }
+.portfolio > li > a {
+  float: left;
+  width: 53%;
+}
 .portfolio > li > img {
   float: left;
   width: 53%;
@@ -837,10 +888,14 @@ header.main:after {
   width: 45%;
 }
 section.about {
-  width: 80%;
+  max-width: 600px;
   margin-bottom: 100px;
 }
 @media screen and (max-width: 800px) {
+  .portfolio > li > a {
+    float: none;
+    width: 100%;
+  }
   .portfolio > li > img {
     float: none;
     width: 100%;
@@ -849,7 +904,21 @@ section.about {
     float: none;
     width: 100%;
   }
-  section.about {
-    width: 100%;
+  .portfolio h2 {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header.main h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  header.main h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
   }
 }

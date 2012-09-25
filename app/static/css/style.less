@@ -1,7 +1,10 @@
 @import "bootstrap.less";
 @import "libs/ie-rgbabg.less";
+@import "libs/prettyphoto/css/prettyphoto.css";
 
 // general styles
+h1 {font-weight:200;}
+h2 {font-weight:200;}
 a {color:#ccc;}
 a:hover {color:#08c;}
 .active > a, a.active {color:#08c;}
@@ -9,32 +12,48 @@ a:hover {color:#08c;}
 // body / background
 body {overflow-x:hidden;}
 
-// header
+// header / footer
 header.main {.clearfix;max-width:1080px;margin:0 auto;}
+footer.main {position:fixed;bottom:0;background:rgba(0,0,0,.9);width:100%;line-height:35px;height:35px;}
+footer.main .inner {margin:0 auto;max-width:1080px;}
 
 // general content
 .main-content {margin-bottom:40px;max-width:1080px;margin:0 auto;}
-@media screen and (max-width:1120px) {
-  header.main {margin:0 20px;}
-  .main-content {margin:0 20px;}
+
+@media screen and (max-width:1100px) {
+  header.main {margin:0 10px;}
+  .main-content {margin:0 10px;}
+  footer.main .inner {margin:0 10px;}
+  footer.main .mobile-label {display:none;}
 }
 
+header.portfolio-head {.clearfix;font-size:30px;line-height:40px;margin-top:30px;}
+header.portfolio-head span {.pull-left;}
+header.portfolio-head .controls {.pull-right;}
+
 // portfolio
-.portfolio-shell {overflow:hidden;position:relative;}
+.portfolio-shell {margin:10px 0 40px 0;overflow:hidden;position:relative;}
 .portfolio {list-style:none;margin:0;.clearfix;position:relative;width:20000px;}
 .portfolio li {float:left;width:1080px;}
 .portfolio h2 {margin-top:0;}
 .portfolio p {}
+.portfolio > li > a {.pull-left;width:53%;}
 .portfolio > li > img {.pull-left;width:53%;}
 .portfolio > li > div {.pull-right;width:45%;}
 
 // about me
-section.about {width:80%;margin-bottom:100px;}
+section.about {max-width:600px;margin-bottom:100px;}
 
 @media screen and (max-width:800px) {
+  .portfolio > li > a {float:none;width:100%;}
   .portfolio > li > img {float:none;width:100%;}
   .portfolio > li > div {float:none;width:100%;}
-  section.about {width:100%;}
+  .portfolio h2 {margin-top:20px;}
 }
 
+@media screen and (max-width:480px) {
+  header.main h1 {font-size:26px;line-height:30px;}
+  header.main h1 {font-size:26px;line-height:30px;}
+  h2 {font-size:26px;line-height:30px;}
+}
 

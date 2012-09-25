@@ -3,15 +3,19 @@
 {% block content %}
 
 <section>
-  <h2>Portfolio
-    <a href="#" class="portfolio-prev">&laquo;</a>
-    <a href="#" class="portfolio-next">&raquo;</a>
-  </h2>
+  <header class="portfolio-head">
+    <span>My Work</span>
+
+    <div class="controls">
+      <a href="#" class="portfolio-prev">&laquo;</a>
+      <a href="#" class="portfolio-next">&raquo;</a>
+    </div>
+  </header>
 
   <div class="portfolio-shell">
     <ul class="portfolio">
       <li>
-        <img src="{{ url_for('static', filename='img/01-channel-4.jpg') }}" /> 
+        <a href="http://vimeo.com/46418786" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/01-channel-4.jpg') }}" /></a>
         <div>
           <h2>Channel 4 Tweeser</h2>
 
@@ -28,7 +32,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/02-my-care.jpg') }}" /> 
+        <a href="http://vimeo.com/44253618" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/02-my-care.jpg') }}" /></a>
         <div>
           <h2>My Care My Home</h2>
 
@@ -39,7 +43,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/03-virgin-media.jpg') }}" /> 
+        <a href="http://vimeo.com/43808144" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/03-virgin-media.jpg') }}" /></a>
         <div>
           <h2>Virgin Media - WiFi on the London Underground</h2>
 
@@ -50,7 +54,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/04-the-apprentice.jpg') }}" /> 
+        <a href="/soundcloud/apprentice?iframe=true" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/04-the-apprentice.jpg') }}" /></a>
         <div>
           <h2>The Apprentice</h2>
 
@@ -64,7 +68,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/05-new-dad.jpg') }}" /> 
+        <a href="http://www.youtube.com/watch?v=kJX2RZnfzWE" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/05-new-dad.jpg') }}" /></a>
         <div>
           <h2>Google - New Dad</h2>
 
@@ -75,7 +79,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/06-the-tower.jpg') }}" /> 
+        <a href="/soundcloud/tower?iframe=true" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/06-the-tower.jpg') }}" /></a>
         <div>
           <h2>The Tower</h2>
 
@@ -84,18 +88,18 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/07-e4-slackers-club.jpg') }}" /> 
+        <a href="http://vimeo.com/42757103" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/07-e4-slackers-club.jpg') }}" /></a>
         <div>
           <h2>E4 Slackers Club</h2>
 
           <p>I created this pastiche of 1970s horror film music for E4 Slackers Club all packed 
           into a 10 second ident. If you can't hear it above the cries of those noisy 
-          zombies then have a listen here:</p>
+          zombies then <a rel="prettyPhoto" href="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F38111157&amp;show_artwork=true&iframe=true">have a listen on soundcloud</a></p>
         </div>
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/08-google-sizzle.jpg') }}" /> 
+        <a href="http://vimeo.com/42756283" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/08-google-sizzle.jpg') }}" /></a>
         <div>
           <h2>Google Sizzle Reel</h2>
 
@@ -107,7 +111,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/09-sky-3d.jpg') }}" /> 
+        <a href="http://vimeo.com/42755467" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/09-sky-3d.jpg') }}" /></a>
         <div>
           <h2>Sky 3D Gold Spot Cinema</h2>
 
@@ -118,7 +122,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/10-google-glasto.jpg') }}" /> 
+        <a href="http://www.youtube.com/watch?v=QOM8wcO9tYc" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/10-google-glasto.jpg') }}" /></a>
         <div>
           <h2>Google Search Stories - Glastonbury 2010</h2>
 
@@ -132,7 +136,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/11-nickelodeon.jpg') }}" /> 
+        <a href="http://vimeo.com/42705684" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/11-nickelodeon.jpg') }}" /></a>
         <div>
           <h2>Nickelodeon - Martian Moon Marathon</h2>
 
@@ -147,7 +151,7 @@
       </li>
 
       <li>
-        <img src="{{ url_for('static', filename='img/12-trading-licks.jpg') }}" /> 
+      <a href="http://www.youtube.com/watch?v=KU9rBMunVJM" rel="prettyPhoto"><img src="{{ url_for('static', filename='img/12-trading-licks.jpg') }}" /></a>
         <div>
           <h2>Trading Licks</h2>
 

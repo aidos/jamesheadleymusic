@@ -19,16 +19,21 @@
           <h1>James Headley Music</h1>
           <p>Music Composition - TV | Advertising | Film | Theatre | Media</p>
         </hgroup>
-
-        <div class="pull-right">
-          <a href="tel:020xxxxxxx" class="contact">020 xxx xxxx</a>
-        </div>
       </header>
     {% endblock %}
 
     <div class="main-content">
       {% block content %}{% endblock %}
     </div>
+
+    {% block footer %}
+      <footer class="main">
+        <div class="inner">
+          <a href="mailto:james@jamesheadley.com" class="pull-left">james@jamesheadley.com</a>
+          <a href="tel:07912 253416" class="pull-right"><span class="mobile-label">mobile: </span>07912 253416</a>
+        </div>
+      </footer>
+    {% endblock %}
 
     <!-- use require to load everything -->
     <script data-main="{{ url_for('static', filename='js/app.js') }}" src="{{ url_for('static', filename='js/libs/require.min.js') }}"></script>
