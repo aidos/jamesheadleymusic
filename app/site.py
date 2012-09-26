@@ -6,11 +6,11 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route("/soundcloud/apprentice", methods=['GET'])
+@app.route("/soundcloud/apprentice.html", methods=['GET'])
 def apprentice():
     return render_template('apprentice.html')
 
-@app.route("/soundcloud/tower", methods=['GET'])
+@app.route("/soundcloud/tower.html", methods=['GET'])
 def tower():
     return render_template('tower.html')
 
