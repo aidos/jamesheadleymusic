@@ -884,6 +884,15 @@ header.portfolio-head .controls a {
 .portfolio > li > a {
   float: left;
   width: 53%;
+  position: relative;
+}
+.portfolio > li > a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 128px;
+  height: 128px;
+  background: url(../img/play.png);
 }
 .portfolio > li > img {
   float: left;
