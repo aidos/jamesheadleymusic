@@ -908,7 +908,8 @@ section.about {
   }
   .portfolio > li > div {
     float: none;
-    width: 100%;
+    width: auto;
+    margin: 0 10px;
   }
   .portfolio h2 {
     margin-top: 20px;
