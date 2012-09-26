@@ -764,12 +764,13 @@ pre code {
 }
 h1 {
   font-weight: 200;
+  margin-bottom: 5px;
 }
 h2 {
   font-weight: 200;
 }
 a {
-  color: #ccc;
+  color: #08c;
 }
 a:hover {
   color: #08c;
@@ -806,6 +807,9 @@ footer.main {
 footer.main .inner {
   margin: 0 auto;
   max-width: 1080px;
+}
+footer.main a {
+  color: #ccc;
 }
 .main-content {
   margin-bottom: 40px;
@@ -892,11 +896,11 @@ section.about {
   margin-bottom: 100px;
 }
 @media screen and (max-width: 800px) {
-  .portfolio > li > a {
+  .portfolio > li a {
     float: none;
     width: 100%;
   }
-  .portfolio > li > img {
+  .portfolio > li img {
     float: none;
     width: 100%;
   }
@@ -917,8 +921,15 @@ section.about {
     font-size: 26px;
     line-height: 30px;
   }
+  header.main p {
+    font-size: 12px;
+  }
+  header.portfolio-head {
+    font-size: 22px;
+    line-height: 26px;
+  }
   h2 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 26px;
   }
 }

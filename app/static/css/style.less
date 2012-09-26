@@ -3,9 +3,9 @@
 @import "libs/prettyphoto/css/prettyphoto.css";
 
 // general styles
-h1 {font-weight:200;}
+h1 {font-weight:200;margin-bottom:5px;}
 h2 {font-weight:200;}
-a {color:#ccc;}
+a {color:#08c;}
 a:hover {color:#08c;}
 .active > a, a.active {color:#08c;}
 
@@ -16,6 +16,7 @@ body {overflow-x:hidden;}
 header.main {.clearfix;max-width:1080px;margin:0 auto;}
 footer.main {position:fixed;bottom:0;background:rgba(0,0,0,.9);width:100%;line-height:35px;height:35px;}
 footer.main .inner {margin:0 auto;max-width:1080px;}
+footer.main a {color:#ccc;}
 
 // general content
 .main-content {margin-bottom:40px;max-width:1080px;margin:0 auto;}
@@ -45,8 +46,8 @@ header.portfolio-head .controls {.pull-right;}
 section.about {max-width:600px;margin-bottom:100px;}
 
 @media screen and (max-width:800px) {
-  .portfolio > li > a {float:none;width:100%;}
-  .portfolio > li > img {float:none;width:100%;}
+  .portfolio > li a {float:none;width:100%;}
+  .portfolio > li img {float:none;width:100%;}
   .portfolio > li > div {float:none;width:100%;}
   .portfolio h2 {margin-top:20px;}
 }
@@ -54,6 +55,8 @@ section.about {max-width:600px;margin-bottom:100px;}
 @media screen and (max-width:480px) {
   header.main h1 {font-size:26px;line-height:30px;}
   header.main h1 {font-size:26px;line-height:30px;}
-  h2 {font-size:26px;line-height:30px;}
+  header.main p {font-size:12px;}
+  header.portfolio-head {font-size:22px;line-height:26px;}
+  h2 {font-size:22px;line-height:26px;}
 }
 
