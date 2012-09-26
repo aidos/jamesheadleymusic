@@ -49,13 +49,13 @@ define(['jquery', 'lazyload', 'prettyphoto', 'libs/ios-zoom-fix'], function() {
       portfolio.animate({marginLeft: -current * shell_width});
     }
 
+    // renderer
     $(window).resize(do_layout);
     do_layout();
 
-
+    // controls
     $('.portfolio-next').click(go_next);
     $('.portfolio-prev').click(go_prev);
-
   });
 
 
@@ -65,5 +65,6 @@ define(['jquery', 'lazyload', 'prettyphoto', 'libs/ios-zoom-fix'], function() {
     default_width : '100%',
     default_height : '100%'
   });
+
 });
 

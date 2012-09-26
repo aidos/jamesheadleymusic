@@ -851,6 +851,10 @@ header.portfolio-head span {
 header.portfolio-head .controls {
   float: right;
 }
+header.portfolio-head .controls a {
+  margin-left: 10px;
+  font-size: 36px;
+}
 .portfolio-shell {
   margin: 10px 0 40px 0;
   overflow: hidden;
@@ -862,6 +866,7 @@ header.portfolio-head .controls {
   *zoom: 1;
   position: relative;
   width: 20000px;
+  background-color: #E3E3E3;
 }
 .portfolio:before,
 .portfolio:after {
@@ -875,9 +880,6 @@ header.portfolio-head .controls {
 .portfolio li {
   float: left;
   width: 1080px;
-}
-.portfolio h2 {
-  margin-top: 0;
 }
 .portfolio > li > a {
   float: left;
