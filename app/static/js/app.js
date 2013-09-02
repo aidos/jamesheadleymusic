@@ -35,7 +35,7 @@ define(['jquery', 'lazyload', 'prettyphoto', 'libs/ios-zoom-fix'], function() {
       e.preventDefault();
       current++;
       if (current > elms.length - 1) {
-        current = elms.length - 1;
+        current = 0;
       }
       portfolio.animate({marginLeft: -current * shell_width});
     }
@@ -44,7 +44,7 @@ define(['jquery', 'lazyload', 'prettyphoto', 'libs/ios-zoom-fix'], function() {
       e.preventDefault();
       current--;
       if (current < 0) {
-        current = 0;
+        current = elms.length - 1;
       }
       portfolio.animate({marginLeft: -current * shell_width});
     }
