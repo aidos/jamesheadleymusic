@@ -8,3 +8,6 @@ cp -r ../app/static/js/* ./dist/static/js/
 
 mv dist/soundcloud/apprentice.html\?iframe\=true dist/soundcloud/apprentice.html
 mv dist/soundcloud/tower.html\?iframe\=true dist/soundcloud/tower.html
+mv dist/soundcloud/shelf-life.html\?iframe\=true dist/soundcloud/shelf-life.html
+mv dist/soundcloud/jennings.html\?iframe\=true dist/soundcloud/jennings.html
+
