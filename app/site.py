@@ -30,7 +30,7 @@ def tower():
 
 if __name__ == "__main__":
     app.debug = True
-    from flaskext.lesscss import lesscss
-    lesscss(app)
+    #from flaskext.lesscss import lesscss
+    #lesscss(app)
     app.run(host='0.0.0.0', port=5012)
 
